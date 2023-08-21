@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../My_wallet/css/main.css" />
+    <link rel="stylesheet" href="../My_wallet/css/mediaqueries.css" />
+    <title>WALLET</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>My Wallet</h1>
+      <nav class="navigation">
+        <a href="#" id="homeLink">Home</a>
+        <a href="#" id="listsLink">Lists</a>
+        <a href="../My_Wallet/index.html">Logout</a>
+      </nav>
+      <div class="dropdown">
+        <button
+          class="bars"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu top-50 end-0 drop is-right">
+          <li>
+            <a class="dropdown-item" href="/" id="homeLinkMobile">Home</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="/" id="listsLinkMobile">Lists</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="..My_Wallet/index.html">LogOut</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="home-page" id="homePage">
+        <div class="sub-container">
+          <div class="budget_numbers">
+            <div class="number money-earned" id="earned">
+              <small>Incomes</small>
+              <div class="amount_container">
+                <p id="earned_symbol">$</p>
+                <span id="amound_earned"></span>
+              </div>
+            </div>
+            <div class="number money-available" id="available">
+              <small>Available</small>
+              <div class="amount_container">
+                <p id="available_symbol">$</p>
+                <span id="amound_available"></span>
+              </div>
+            </div>
+            <div class="number money-spent" id="spent">
+              <small>Expenses</small>
+              <div class="amount_container">
+                <p id="spent_symbol">$</p>
+                <span id="amound_spent"></span>
+              </div>
+            </div>
+          </div>
+          <div class="inputs">
+            <div class="input_area">
+              <input type="text" id="description" placeholder="Description" />
+              <input type="number" id="amount" placeholder="Amount" />
+            </div>
+            <div class="options">
+              <label for="">
+                <input
+                  type="radio"
+                  name="category"
+                  id="categoryIncome"
+                  value="incomeValue"
+                />
+                <span class="bubble income"></span>
+                <div>Income</div>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="category"
+                  id="categoryExpense"
+                  value="expenseValue"
+                />
+                <span class="bubble expense"></span>
+                <div>Expense</div>
+              </label>
+            </div>
+            <div id="error"></div>
+            <div class="button_container">
+              <button class="btn" id="add">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lists-page hidden" id="listPage">
+        <div class="incomeListContainer">
+          <div class="h2">
+            <h2>Incomes</h2>
+          </div>
+          <div id="p1"></div>
+          <div id="item-income-list"></div>
+        </div>
+        <div class="expenseListContainer">
+          <div class="h2"><h2>Expenses</h2></div>
+          <div id="p2"></div>
+          <div id="item-expense-list"></div>
+        </div>
+      </div>
+    </main>
+    <script src="../My_wallet/js/login-registration.js"></script>
+    <script src="../My_wallet/js/loadAndSave.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

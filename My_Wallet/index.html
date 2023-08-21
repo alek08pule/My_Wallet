@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../My_wallet/css/loginStyle.css" />
+    <link rel="stylesheet" href="../My_wallet/css/main.css" />
+    <link rel="stylesheet" href="../My_wallet/css/mediaqueries.css" />
+    <title>Wallet--LOGIN FORM</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>My Wallet</h1>
+    </header>
+    <main>
+      <div class="loginForm form-hidden" id="login">
+        <form class="form">
+          <h1 class="form_title">Login</h1>
+          <div class="form_message"></div>
+          <div class="form_inputs-group">
+            <input
+              id="loginEmail"
+              class="form_input"
+              type="text"
+              autofocus
+              placeholder="Email address"
+            />
+            <p class="form_input-error-message"></p>
+          </div>
+          <div class="form_inputs-group">
+            <input
+              id="loginPassword"
+              class="form_input"
+              type="password"
+              autofocus
+              placeholder="Enter password"
+            />
+            <p class="form_input-error-message"></p>
+          </div>
+
+          <button class="form_button" type="submit" id="goToHomePage">
+            Login
+          </button>
+          <p class="form_text">
+            <a href="./" class="form_link" id="linkCreateAccount"
+              >Don't have an account? Create account.</a
+            >
+          </p>
+        </form>
+      </div>
+      <div class="createAccountForm" id="createAccount">
+        <form class="form">
+          <h1 class="form_title">Create Account</h1>
+          <div class="form_message"></div>
+          <div class="form_inputs-group">
+            <input
+              id="username"
+              class="form_input"
+              type="text"
+              autofocus
+              placeholder="Username"
+            />
+            <p class="form_input-error-message"></p>
+          </div>
+          <div class="form_inputs-group">
+            <input
+              id="registrationEmail"
+              class="form_input"
+              type="text"
+              autofocus
+              placeholder="Email address"
+            />
+            <p class="form_input-error-message"></p>
+          </div>
+          <div class="form_inputs-group">
+            <input
+              id="registrationPassword"
+              class="form_input"
+              type="password"
+              autofocus
+              placeholder="Enter password"
+            />
+            <p class="form_input-error-message"></p>
+          </div>
+          <div class="form_inputs-group">
+            <input
+              id="confirmPassword"
+              class="form_input"
+              type="password"
+              autofocus
+              placeholder="Confirm password"
+            />
+            <p class="form_input-error-message"></p>
+          </div>
+
+          <button class="form_button" type="submit">Create</button>
+
+          <p class="form_text">
+            <a href="./" class="form_link" id="linkLogin"
+              >Already have an account? Sign in.</a
+            >
+          </p>
+        </form>
+      </div>
+    </main>
+    <script src="../My_wallet/js/login-registration.js"></script>
+    <script></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
