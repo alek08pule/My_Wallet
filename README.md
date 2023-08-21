@@ -10,9 +10,11 @@ My Wallet App is a basic wallet management application that allows users to secu
 
 To use the app:
 
-1. Clone this repository to your local machine.
-2. Open the `index.html` file in a web browser.
-3. Start managing your wallet by adding transactions and observing the changes.
+1.Clone: Make a copy of this project on to your computer by clicking the "Code" button above and selecting "Download ZIP." Extract the downloaded file.
+
+2.Open: Double-click the index.html file to open the app in your web browser.
+
+3.Explore: Start managing your wallet by adding transactions and observing the changes.
 
 ## Technologies Used
 
